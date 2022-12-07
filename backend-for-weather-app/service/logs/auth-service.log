@@ -1,0 +1,448 @@
+2022-07-20 08:04:30.691  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1154) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:75) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 5 common frames omitted
+
+2022-07-20 08:04:30.707  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1154) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:75) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 5 common frames omitted
+
+2022-07-20 08:04:30.887  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1154) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:75) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 5 common frames omitted
+
+2022-07-20 08:04:30.890  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:357) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:344) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readAndUnwrap(TlsChannelImpl.java:629) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.read(TlsChannelImpl.java:236) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.ClientTlsChannel.read(ClientTlsChannel.java:168) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.readHandlingTasks(AsynchronousTlsChannelGroup.java:599) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.doRead(AsynchronousTlsChannelGroup.java:564) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.lambda$processRead$5(AsynchronousTlsChannelGroup.java:476) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	... 1 common frames omitted
+
+2022-07-20 08:04:30.982  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:357) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:344) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readAndUnwrap(TlsChannelImpl.java:629) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.read(TlsChannelImpl.java:236) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.ClientTlsChannel.read(ClientTlsChannel.java:168) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.readHandlingTasks(AsynchronousTlsChannelGroup.java:599) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.doRead(AsynchronousTlsChannelGroup.java:564) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.lambda$processRead$5(AsynchronousTlsChannelGroup.java:476) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	... 1 common frames omitted
+
+2022-07-20 08:04:30.986  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:357) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:344) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readAndUnwrap(TlsChannelImpl.java:629) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.read(TlsChannelImpl.java:236) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.ClientTlsChannel.read(ClientTlsChannel.java:168) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.readHandlingTasks(AsynchronousTlsChannelGroup.java:599) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.doRead(AsynchronousTlsChannelGroup.java:564) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.lambda$processRead$5(AsynchronousTlsChannelGroup.java:476) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	... 1 common frames omitted
+
+2022-07-20 08:04:32.048  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:18, serverValue:9290}] to cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.048  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=807724600, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000186, setVersion=8, topologyVersion=TopologyVersion{processId=62d73fd3e5cae61b3b007c30, counter=6}, lastWriteDate=Wed Jul 20 08:04:32 IST 2022, lastUpdateTimeNanos=36533722748700}
+2022-07-20 08:04:32.049  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff0000000000000186 from replica set primary cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.049  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.149  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:22, serverValue:9310}] to cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.149  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=811428200, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000186, setVersion=8, topologyVersion=TopologyVersion{processId=62d73fd3e5cae61b3b007c30, counter=6}, lastWriteDate=Wed Jul 20 08:04:32 IST 2022, lastUpdateTimeNanos=36533823648100}
+2022-07-20 08:04:32.149  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff0000000000000186 from replica set primary cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.149  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.298  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:19, serverValue:8688}] to cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.298  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:20, serverValue:9436}] to cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.299  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=825188400, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d741691e36ea8d5eb3f7f0, counter=3}, lastWriteDate=Wed Jul 20 08:04:32 IST 2022, lastUpdateTimeNanos=36533973449300}
+2022-07-20 08:04:32.299  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:23, serverValue:8688}] to cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.299  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=828129700, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d73e7a4368f198d469530e, counter=4}, lastWriteDate=Wed Jul 20 08:04:32 IST 2022, lastUpdateTimeNanos=36533973515600}
+2022-07-20 08:04:32.299  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=826442500, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d741691e36ea8d5eb3f7f0, counter=3}, lastWriteDate=Wed Jul 20 08:04:32 IST 2022, lastUpdateTimeNanos=36533974048800}
+2022-07-20 08:04:32.299  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:21, serverValue:9437}] to cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+2022-07-20 08:04:32.300  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=826312600, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d73e7a4368f198d469530e, counter=4}, lastWriteDate=Wed Jul 20 08:04:32 IST 2022, lastUpdateTimeNanos=36533974572800}
+2022-07-20 10:03:45.624  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:357) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:344) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readAndUnwrap(TlsChannelImpl.java:629) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.read(TlsChannelImpl.java:236) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.ClientTlsChannel.read(ClientTlsChannel.java:168) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.readHandlingTasks(AsynchronousTlsChannelGroup.java:599) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.doRead(AsynchronousTlsChannelGroup.java:564) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.lambda$processRead$5(AsynchronousTlsChannelGroup.java:476) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	... 1 common frames omitted
+
+2022-07-20 10:03:45.637  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1154) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:75) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 5 common frames omitted
+
+2022-07-20 10:03:45.642  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:357) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:344) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readAndUnwrap(TlsChannelImpl.java:629) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.read(TlsChannelImpl.java:236) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.ClientTlsChannel.read(ClientTlsChannel.java:168) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.readHandlingTasks(AsynchronousTlsChannelGroup.java:599) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.doRead(AsynchronousTlsChannelGroup.java:564) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.lambda$processRead$5(AsynchronousTlsChannelGroup.java:476) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	... 1 common frames omitted
+
+2022-07-20 10:03:45.734  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:357) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readFromChannel(TlsChannelImpl.java:344) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.readAndUnwrap(TlsChannelImpl.java:629) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.impl.TlsChannelImpl.read(TlsChannelImpl.java:236) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.ClientTlsChannel.read(ClientTlsChannel.java:168) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.readHandlingTasks(AsynchronousTlsChannelGroup.java:599) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.doRead(AsynchronousTlsChannelGroup.java:564) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.tlschannel.async.AsynchronousTlsChannelGroup.lambda$processRead$5(AsynchronousTlsChannelGroup.java:476) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	... 1 common frames omitted
+
+2022-07-20 10:03:45.736  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketException: No such host is known (cluster0-shard-00-02.vhfx0.gcp.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (cluster0-shard-00-02.vhfx0.gcp.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 6 common frames omitted
+
+2022-07-20 10:03:45.738  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1154) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:75) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 5 common frames omitted
+
+2022-07-20 10:03:45.825  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketException: cluster0-shard-00-02.vhfx0.gcp.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddress(ServerAddress.java:196) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.connection.TlsChannelStreamFactoryFactory$TlsChannelStream.openAsync(TlsChannelStreamFactoryFactory.java:214) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.AsynchronousChannelStream.open(AsynchronousChannelStream.java:124) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.UnknownHostException: cluster0-shard-00-02.vhfx0.gcp.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1248) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddress(ServerAddress.java:194) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 6 common frames omitted
+
+2022-07-20 10:03:45.839  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketException: No such host is known (cluster0-shard-00-00.vhfx0.gcp.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddress(ServerAddress.java:196) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.connection.TlsChannelStreamFactoryFactory$TlsChannelStream.openAsync(TlsChannelStreamFactoryFactory.java:214) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.AsynchronousChannelStream.open(AsynchronousChannelStream.java:124) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (cluster0-shard-00-00.vhfx0.gcp.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1248) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddress(ServerAddress.java:194) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 6 common frames omitted
+
+2022-07-20 10:03:45.840  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:702) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1154) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:637) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:75) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:137) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 5 common frames omitted
+
+2022-07-20 10:03:45.850  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketException: cluster0-shard-00-01.vhfx0.gcp.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.UnknownHostException: cluster0-shard-00-01.vhfx0.gcp.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 6 common frames omitted
+
+2022-07-20 10:03:45.860  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketException: cluster0-shard-00-00.vhfx0.gcp.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.UnknownHostException: cluster0-shard-00-00.vhfx0.gcp.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 6 common frames omitted
+
+2022-07-20 10:03:45.861  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+
+com.mongodb.MongoSocketException: No such host is known (cluster0-shard-00-01.vhfx0.gcp.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddress(ServerAddress.java:196) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.connection.TlsChannelStreamFactoryFactory$TlsChannelStream.openAsync(TlsChannelStreamFactoryFactory.java:214) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.AsynchronousChannelStream.open(AsynchronousChannelStream.java:124) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.6.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.6.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (cluster0-shard-00-01.vhfx0.gcp.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298) ~[na:na]
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1248) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddress(ServerAddress.java:194) ~[mongodb-driver-core-4.6.0.jar:na]
+	... 6 common frames omitted
+
+2022-07-20 10:03:47.165  WARN 3004 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h35m11s931ms439µs900ns).
+2022-07-20 10:03:56.522  INFO 3004 --- [cluster-rtt-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:35, serverValue:14906}] to cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.564  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:36, serverValue:14150}] to cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.565  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=520371800, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d741691e36ea8d5eb3f7f0, counter=3}, lastWriteDate=Wed Jul 20 10:03:57 IST 2022, lastUpdateTimeNanos=43702509547300}
+2022-07-20 10:03:56.602  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:37, serverValue:14150}] to cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.602  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=514816300, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d741691e36ea8d5eb3f7f0, counter=3}, lastWriteDate=Wed Jul 20 10:03:57 IST 2022, lastUpdateTimeNanos=43702547088900}
+2022-07-20 10:03:56.642  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:41, serverValue:14906}] to cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.643  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:38, serverValue:14906}] to cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.643  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=526605600, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d73e7a4368f198d469530e, counter=4}, lastWriteDate=Wed Jul 20 10:03:57 IST 2022, lastUpdateTimeNanos=43702587916000}
+2022-07-20 10:03:56.643  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=529265600, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=62d73e7a4368f198d469530e, counter=4}, lastWriteDate=Wed Jul 20 10:03:57 IST 2022, lastUpdateTimeNanos=43702588053900}
+2022-07-20 10:03:56.667  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:40, serverValue:14754}] to cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.668  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=548131200, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000186, setVersion=8, topologyVersion=TopologyVersion{processId=62d73fd3e5cae61b3b007c30, counter=6}, lastWriteDate=Wed Jul 20 10:03:57 IST 2022, lastUpdateTimeNanos=43702613120000}
+2022-07-20 10:03:56.668  INFO 3004 --- [cluster-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.714  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:39, serverValue:14796}] to cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:56.714  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=596607800, setName='Cluster0-shard-0', canonicalAddress=cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017, hosts=[cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017, cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='CENTRAL_US'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000186, setVersion=8, topologyVersion=TopologyVersion{processId=62d73fd3e5cae61b3b007c30, counter=6}, lastWriteDate=Wed Jul 20 10:03:57 IST 2022, lastUpdateTimeNanos=43702659861500}
+2022-07-20 10:03:56.714  INFO 3004 --- [cluster-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:58.425  INFO 3004 --- [cluster-rtt-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:42, serverValue:14909}] to cluster0-shard-00-00.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:58.552  INFO 3004 --- [cluster-rtt-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:43, serverValue:14788}] to cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:58.600  INFO 3004 --- [cluster-rtt-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:45, serverValue:14146}] to cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:03:58.613  INFO 3004 --- [cluster-rtt-ClusterId{value='62d6e4eee6a2347cb87681b1', description='null'}-cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:44, serverValue:14785}] to cluster0-shard-00-01.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:04:06.134  INFO 3004 --- [cluster-rtt-ClusterId{value='62d6e4ede6a2347cb87681b0', description='null'}-cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:46, serverValue:14162}] to cluster0-shard-00-02.vhfx0.gcp.mongodb.net:27017
+2022-07-20 10:04:54.152  INFO 3004 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-20 10:04:54.167  INFO 3004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-20 10:04:54.182  INFO 3004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
